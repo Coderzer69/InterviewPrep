@@ -36,7 +36,8 @@ interface InterviewSummary {
   }>;
 }
 
-const API_URL = "http://localhost:3000/api/v1/interview-bit";
+const API_URL =
+  "https://interview-prep-backend-six.vercel.app/api/v1/interview-bit";
 
 type StartResponse = {
   question: string;
