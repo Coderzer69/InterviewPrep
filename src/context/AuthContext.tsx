@@ -53,7 +53,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
   }, []);
 
   const signUp = async (email: string, password: string) => {
-    const redirectUrl = `${window.location.origin}/`;
+    const redirectUrl = `https://interview-prep-inky-alpha.vercel.app/`;
 
     const { error } = await supabase.auth.signUp({
       email,
