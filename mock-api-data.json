@@ -1,0 +1,181 @@
+{
+  "startResponses": [
+    {
+      "role": "software-engineer",
+      "mode": "technical",
+      "response": {
+        "question": "Explain the difference between let, const, and var in JavaScript.",
+        "topic": "JavaScript Fundamentals",
+        "difficulty": "Easy",
+        "notes": "Focus on scope, hoisting, and reassignment capabilities."
+      }
+    },
+    {
+      "role": "software-engineer",
+      "mode": "technical",
+      "response": {
+        "question": "Implement a function to reverse a linked list.",
+        "topic": "Data Structures",
+        "difficulty": "Medium",
+        "notes": "Consider both iterative and recursive approaches."
+      }
+    },
+    {
+      "role": "software-engineer",
+      "mode": "technical",
+      "response": {
+        "question": "Design a scalable system for handling 1 million requests per second.",
+        "topic": "System Design",
+        "difficulty": "Hard",
+        "notes": "Discuss load balancing, caching, database sharding, and CDN."
+      }
+    },
+    {
+      "role": "software-engineer",
+      "mode": "behavioral",
+      "response": {
+        "question": "Tell me about a time when you had to debug a difficult problem under pressure.",
+        "topic": "Problem Solving",
+        "difficulty": "Medium",
+        "notes": "Use the STAR method: Situation, Task, Action, Result."
+      }
+    },
+    {
+      "role": "product-manager",
+      "mode": "behavioral",
+      "response": {
+        "question": "Describe a time when you had to make a difficult product decision with limited data.",
+        "topic": "Decision Making",
+        "difficulty": "Medium",
+        "notes": "Use the STAR method: Situation, Task, Action, Result."
+      }
+    },
+    {
+      "role": "product-manager",
+      "mode": "technical",
+      "response": {
+        "question": "How would you prioritize features for a new product launch?",
+        "topic": "Product Strategy",
+        "difficulty": "Medium",
+        "notes": "Consider user impact, business value, and technical feasibility."
+      }
+    },
+    {
+      "role": "data-scientist",
+      "mode": "technical",
+      "response": {
+        "question": "Explain the bias-variance tradeoff in machine learning.",
+        "topic": "Machine Learning Fundamentals",
+        "difficulty": "Hard",
+        "notes": "Discuss how it relates to model complexity and generalization."
+      }
+    },
+    {
+      "role": "data-scientist",
+      "mode": "technical",
+      "response": {
+        "question": "How would you handle missing data in a dataset?",
+        "topic": "Data Preprocessing",
+        "difficulty": "Medium",
+        "notes": "Discuss various imputation techniques and when to use them."
+      }
+    },
+    {
+      "role": "data-analyst",
+      "mode": "technical",
+      "response": {
+        "question": "Write a SQL query to find the second highest salary from an employees table.",
+        "topic": "SQL",
+        "difficulty": "Easy",
+        "notes": "Consider edge cases like duplicate salaries and empty tables."
+      }
+    },
+    {
+      "role": "ui-ux-designer",
+      "mode": "behavioral",
+      "response": {
+        "question": "Tell me about a design decision you made that was initially unpopular but proved to be correct.",
+        "topic": "Design Leadership",
+        "difficulty": "Medium",
+        "notes": "Focus on user research, data, and iteration process."
+      }
+    },
+    {
+      "role": "database-admin",
+      "mode": "technical",
+      "response": {
+        "question": "Explain the differences between SQL and NoSQL databases. When would you use each?",
+        "topic": "Database Systems",
+        "difficulty": "Medium",
+        "notes": "Discuss ACID properties, scalability, and use cases."
+      }
+    }
+  ],
+  "answerResponses": [
+    {
+      "question": "Explain the difference between let, const, and var in JavaScript.",
+      "answer": "let and const are block-scoped, while var is function-scoped. const cannot be reassigned, let can be reassigned, and var can be reassigned and hoisted.",
+      "response": {
+        "was_your_answer_correct": true,
+        "explanation": "Correct! You've covered the key differences: scope (block vs function), reassignment capabilities, and hoisting behavior. Additionally, const requires initialization and cannot be redeclared in the same scope."
+      }
+    },
+    {
+      "question": "Explain the difference between let, const, and var in JavaScript.",
+      "answer": "They are all the same.",
+      "response": {
+        "was_your_answer_correct": false,
+        "explanation": "Incorrect. While they all declare variables, they have important differences: scope (block vs function), hoisting behavior, and reassignment capabilities. Let and const are block-scoped and not hoisted in the same way as var."
+      }
+    },
+    {
+      "question": "Implement a function to reverse a linked list.",
+      "answer": "I would use an iterative approach with three pointers: prev, current, and next. I'd traverse the list, reversing the links as I go.",
+      "response": {
+        "was_your_answer_correct": true,
+        "explanation": "Excellent approach! The three-pointer technique is the standard iterative solution with O(n) time and O(1) space complexity. You could also mention the recursive approach for completeness."
+      }
+    },
+    {
+      "question": "Tell me about a time when you had to make a difficult product decision with limited data.",
+      "answer": "Situation: We had to decide whether to launch a feature with only 2 weeks of user testing data. Task: I needed to balance user needs with business goals. Action: I gathered qualitative feedback, consulted with engineering on technical risks, and created a phased rollout plan. Result: We launched with feature flags, monitored closely, and achieved 40% adoption in the first month.",
+      "response": {
+        "was_your_answer_correct": true,
+        "explanation": "Great use of the STAR method! You demonstrated data-driven thinking, risk mitigation through phased rollout, and clear metrics. Consider also mentioning how you validated assumptions post-launch."
+      }
+    },
+    {
+      "question": "Explain the bias-variance tradeoff in machine learning.",
+      "answer": "Bias is the error from oversimplifying assumptions, leading to underfitting. Variance is error from sensitivity to small fluctuations, leading to overfitting. The tradeoff means we need to balance model complexity to minimize total error.",
+      "response": {
+        "was_your_answer_correct": true,
+        "explanation": "Correct! You've captured the essence. High bias models (like linear regression) are too simple, while high variance models (like deep trees) memorize training data. Regularization techniques like L1/L2 help balance this tradeoff."
+      }
+    },
+    {
+      "question": "Describe a challenging bug you debugged and how you solved it.",
+      "answer": "I encountered a memory leak in a Node.js application. I used Chrome DevTools heap snapshots, identified the root cause was event listeners not being removed, and implemented proper cleanup in component unmount. This reduced memory usage by 60%.",
+      "response": {
+        "was_your_answer_correct": true,
+        "explanation": "Excellent! You demonstrated systematic debugging, used appropriate tools, identified the root cause, and provided a quantifiable impact. This shows strong problem-solving skills."
+      }
+    },
+    {
+      "question": "Write a SQL query to find the second highest salary from an employees table.",
+      "answer": "SELECT MAX(salary) FROM employees WHERE salary < (SELECT MAX(salary) FROM employees);",
+      "response": {
+        "was_your_answer_correct": true,
+        "explanation": "Correct! This is a clean solution using a subquery. You could also mention using LIMIT/OFFSET, window functions (RANK()), or handling ties depending on requirements."
+      }
+    },
+    {
+      "question": "Explain the differences between SQL and NoSQL databases. When would you use each?",
+      "answer": "SQL databases are relational, use structured schemas, and support ACID properties. NoSQL databases are non-relational, flexible schemas, and prioritize scalability. Use SQL for transactional data, NoSQL for large-scale, unstructured data.",
+      "response": {
+        "was_your_answer_correct": true,
+        "explanation": "Good overview! SQL is ideal for complex queries, transactions, and data integrity. NoSQL excels at horizontal scaling, rapid development, and handling diverse data types. Many systems use both (polyglot persistence)."
+      }
+    }
+  ]
+}
+

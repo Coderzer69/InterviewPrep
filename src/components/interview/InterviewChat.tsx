@@ -37,7 +37,7 @@ interface InterviewSummary {
 }
 
 const API_URL =
-  "https://interview-prep-backend-six.vercel.app/api/v1/interview-bit";
+  "https://interview-prep-backend-indol.vercel.app/api/v1/interview-bit";
 
 type StartResponse = {
   question: string;
